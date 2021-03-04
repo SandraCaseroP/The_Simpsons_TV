@@ -1,0 +1,213 @@
+:root {
+    --floor: #23ab7e;
+    --wall: #df8eb9;
+    --first_blue: #284889;      /*#2c4e95;*/
+    --second_blue: #5192c2;
+    --tv: #8c80be;      /*#8d81bf;*/
+    --feet: #613776;
+    --border_color: #000000b3;
+    --speaker: #3f6f83;
+}
+
+body {
+    background-color: var(--wall);
+}
+.container_tv {
+    width: 35%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    margin-top: 6%;
+    position: relative;
+
+    border:1px solid blue;    
+}
+
+.container_tv::before {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 13%;
+    background-color: #2b2828;
+    bottom: 51px;
+    right: -37px;
+    transform: rotate(4deg);
+}
+
+.cabecera {
+    margin-top: 16px;
+    width: 83%;
+    margin-left: 57px;
+}
+
+.antena {
+    width: 76px; 
+    height: 36px; 
+    border-top: 1px solid var(--border_color);
+    border-right: 1px solid var(--border_color); 
+    border-left: 1px solid var(--border_color);  
+    background: var(--first_blue);
+    border-radius: 100px 100px 0 0;
+    margin-left: 26%;
+}
+
+.tape {
+    width: 183px;
+    height: 28px;
+    background-color: var(--first_blue);
+    border: 1px solid var(--border_color);
+    border-radius: 3px;
+    margin-left: 47px;
+    display: flex;
+}
+
+.rect {
+    background-color: var(--second_blue);
+    width: 80px;
+    height: 13px;
+    margin-top: 9px;
+    margin-left: 22px;
+    border-radius: 3px;
+    border: 1px solid var(--border_color);
+}
+
+.circ {
+    background-color: var(--second_blue);
+    border: 1px solid var(--border_color);
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    margin-top: 9px;
+    margin-left: 18px;
+}
+
+.tv {
+    background-color: var(--tv);
+    border: 1px solid var(--border_color);
+    border-radius: 8px;
+    width: 83%;
+    margin-left: 59px;
+    height: 270px;
+    display: flex;
+    transform: skew(1deg);
+}
+
+.tv_screen {
+    margin-left: 24px;
+    width: 73.5%;
+    background: var(--first_blue);
+    margin-top: 21px;
+    margin-bottom: 33px;
+    transform: skew(-1grad);
+    border: 1px solid var(--border_color);
+    position: relative;
+}
+
+.tv_screen::before,
+.tv_screen::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    background-color: black;    
+}
+
+.tv_screen::before {
+    transform: rotate(36.8deg);
+    width: 122%;
+    top: 104px;
+    right: -27px;
+}
+
+.tv_screen::after {
+    transform: rotate(-36.7deg);
+    width: 123%;
+    top: 108px;    
+    right: -31px;
+}
+
+.screen {    
+    border: 1px solid var(--border_color);
+    width: 250px;
+    height: 185px;
+    margin: 16px 0 0 12px;
+    border-radius: 3em/10em;
+
+    background-position: center;
+    background-size: cover;
+    background-image: url("the_simpson_intro.jpg");
+    z-index: 1;
+    position: relative;
+}
+
+.controls {
+    margin-top: 21px;
+    width: 20.5%;
+}
+
+.play, .pause {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: var(--first_blue);
+    margin: 6px 0 16px 21px;
+    border: 1px solid var(--border_color);
+    position: relative;
+}
+
+.play::before, .pause::before {
+    position: absolute;
+    content: '';
+    height: 11px;    
+    background-color: var(--second_blue);
+    border-radius: 3px;
+    border: 1px solid var(--border_color);
+}
+
+.play::before {    
+    transform: rotate(139grad);
+    top: 13px;
+    width: 38px;
+    left: 0;
+}
+
+.pause::before {
+    transform: rotate(64grad);
+    top: 13px;
+    left: 0;
+    width: 38px;
+}
+
+.speaker{
+    width: 54px;
+    height: 91px;
+    background-color: var(--second_blue);
+    border: 1px solid var(--border_color);
+    margin-left: 13px;
+    margin-top: 20px;
+    border-radius: 4px;
+    transform: skew(-1deg);
+}
+
+.speaker::before, .speaker::after {
+    content: " ";
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    width: 20px;
+    height: 80px;
+    border-left: solid 2px var(--speaker);
+    border-right: solid 2px var(--speaker);
+}
+
+.speaker::after {
+    left: 19px;
+}
+
+.foot {
+    width: 83%;
+    height: 32px;
+    background: red;
+    margin-left: 62px;
+}
