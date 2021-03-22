@@ -1,10 +1,10 @@
 :root {
     --floor: #23ab7e;
     --wall: #df8eb9;
-    --first_blue: #284889;      /*#2c4e95;*/
+    --first_blue: #284889;
     --second_blue: #5192c2;
-    --tv: #8c80be;      /*#8d81bf;*/
-    --foot: #613776; /*393260*/
+    --tv: #8c80be;
+    --foot: #613776;
     --border_color: #000000b3;
     --speaker: #3f6f83;
 }

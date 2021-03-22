@@ -1,6 +1,3 @@
-//const VIDEO = document.getElementsByTagName("video")[0];
-//VIDEO.currentTime = 2; 
-
 function turnoff(){
     var tvOn = document.getElementById("tvOn");
     var wire = document.getElementById("wire");
