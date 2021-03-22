@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <!--<link rel="stylesheet" href="bootstrap-4.3.0-dist/css/bootstrap.min.css">
-    <script src="bootstrap-4.3.0-dist/js/jquery-3.3.1.min.js"></script>
-    <script src="bootstrap-4.3.0-dist/js/popper.min.js"></script>
-    <script src="bootstrap-4.3.0-dist/js/bootstrap.min.js"></script>-->
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,13 +20,13 @@
         </div>
         <div class="tv">
             <div class="tv_screen">                    
-                <video class="screen" autoplay>
+                <video class="screen" id="video">
                     <source src="Simpsons _Intro_HD.mp4" type="video/mp4"/>
                 </video>
             </div>
             <div class="controls">
-                <div class="play"></div>
-                <div class="pause"></div>
+                <div class="play" id="play" onclick="playVideo()"></div>
+                <div class="pause" id="pause" onclick="pauseVideo()"></div>
                 <div class="speaker"></div>
 
             </div>
@@ -38,6 +35,13 @@
             <div class="left"></div>                
             <div class="right"></div>
         </div>
+    </div>
+
+    <div class="container_stream">
+        <div class="stream1"></div>
+        <div class="stream2" id="tvOn"></div>
+        <div class="plug" id="plug" onclick="turnoff();"></div>
+        <div class="wireOn" id="wire"></div>
     </div>
 </body>
 </html>
