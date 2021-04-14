@@ -22,7 +22,6 @@ function turnoff(){
 
 function playVideo(){
     document.getElementById("video").play();
-    document.getElementById("video").currentTime = 2;
 }
 
 function pauseVideo(){
